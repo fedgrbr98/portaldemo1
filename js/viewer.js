@@ -1,5 +1,5 @@
-import Marzipano from "marzipano";
-import { SCENES } from "scenes.js";
+import Marzipano from './vendor/marzipano.js'; 
+import { SCENES } from "./scenes.js";
 
 // ========================================
 // CONFIGURACIÓN
