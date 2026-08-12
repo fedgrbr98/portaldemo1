@@ -1,0 +1,230 @@
+MANUAL_OPERADOR_v001.txt
+===========================================================
+FG INTERACTIVE EXPERIENCE
+MANUAL DEL OPERADOR
+Versión 0.1
+===========================================================
+
+OBJETIVO
+
+Este documento explica cómo reemplazar el contenido de la plataforma
+sin modificar su funcionamiento.
+
+===========================================================
+ESTRUCTURA GENERAL
+===========================================================
+
+FG_Interactive_Experience/
+
+assets/
+│
+├── panoramas/
+├── images/
+├── pdf/
+├── text/
+└── icons/
+
+design-system/
+
+js/
+
+pages/
+
+index.html
+
+===========================================================
+1. CAMBIAR EL PROYECTO
+===========================================================
+
+La plataforma está preparada para reutilizarse.
+
+Para crear un nuevo proyecto NO es necesario rehacer el sitio.
+
+Simplemente reemplazar los archivos correspondientes.
+
+===========================================================
+2. PANORAMAS 360
+===========================================================
+
+Ubicación:
+
+assets/panoramas/
+
+Formatos recomendados:
+
+JPG
+PNG
+
+Para cambiar un panorama:
+
+1) Reemplazar la imagen.
+2) Mantener el mismo nombre
+o modificar la ruta en:
+
+js/project.js
+
+viewer.panorama
+
+===========================================================
+3. CAMBIO ENTRE PANORAMAS
+===========================================================
+
+Cada botón del recorrido utiliza un atributo:
+
+data-panorama
+
+Ejemplo:
+
+../../assets/panoramas/living.jpg
+
+Para agregar un ambiente:
+
+1) Copiar el panorama.
+2) Crear un botón nuevo.
+3) Asignar su data-panorama.
+
+===========================================================
+4. RENDERS
+===========================================================
+
+Ubicación:
+
+assets/images/loft/
+
+Agregar un render:
+
+1) Copiar la imagen.
+
+2) Editar:
+
+ProjectData.gallery
+
+Ejemplo:
+
+{
+
+title:"Exterior",
+
+image:"../../assets/images/loft/render01.png"
+
+}
+
+IMPORTANTE
+
+Verificar la extensión.
+
+JPG y PNG NO son iguales.
+
+===========================================================
+5. PLANOS
+===========================================================
+
+Ubicación:
+
+assets/pdf/
+
+Reemplazar:
+
+legajo_loft.pdf
+
+No es necesario modificar HTML.
+
+===========================================================
+6. MEMORIA DESCRIPTIVA
+===========================================================
+
+Ubicación:
+
+assets/text/memoria.html
+
+Puede editarse libremente.
+
+No requiere tocar código.
+
+===========================================================
+7. CONTACTO
+===========================================================
+
+Modificar:
+
+pages/contacto/index.html
+
+Reemplazar:
+
+https://wa.me/549XXXXXXXXXX
+
+por el número definitivo.
+
+===========================================================
+8. COLORES
+===========================================================
+
+Modificar únicamente:
+
+design-system/
+
+variables.css
+
+Nunca editar colores dentro de los módulos.
+
+===========================================================
+9. TIPOGRAFÍA
+===========================================================
+
+Modificar:
+
+typography.css
+
+===========================================================
+10. COMPONENTES
+===========================================================
+
+Botones
+
+Cards
+
+Badges
+
+Todo se modifica desde:
+
+components.css
+
+===========================================================
+11. CHECKLIST ANTES DE ENTREGAR
+===========================================================
+
+☐ Landing funciona
+
+☐ Hub funciona
+
+☐ Recorrido funciona
+
+☐ Todos los panoramas cargan
+
+☐ Galería completa
+
+☐ Modal correcto
+
+☐ PDF abre
+
+☐ Memoria correcta
+
+☐ WhatsApp correcto
+
+☐ Sin errores en consola
+
+===========================================================
+12. NO HACER
+===========================================================
+
+No mover carpetas.
+
+No cambiar nombres de archivos sin actualizar project.js.
+
+No mezclar JPG con PNG.
+
+No modificar rutas sin verificar.
+
+===========================================================
+FIN DEL MANUAL
+===========================================================

@@ -1,0 +1,112 @@
+.hero-content{
+
+    animation:fadeUp 1s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:none;
+
+    }
+
+}
+
+@keyframes loadingBar{
+
+    from{
+
+        width:0;
+
+    }
+
+    to{
+
+        width:100%;
+
+    }
+
+}
+
+body{
+
+    opacity:1;
+
+    transition:
+        opacity .35s ease,
+        filter .35s ease;
+
+}
+
+body.page-transition{
+
+    opacity:0;
+
+    filter:blur(8px);
+
+}
+
+@keyframes pageEnter{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(18px);
+
+        filter:blur(8px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+        filter:blur(0);
+
+    }
+
+}
+
+.page-layout{
+
+    animation:pageEnter .55s ease;
+}
+
+button,
+.hub-card{
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+
+}
+
+button:active,
+.hub-card:active{
+
+    transform:scale(.97);
+
+}
+
+button,
+a,
+.hub-card{
+
+    cursor:pointer;
+
+}

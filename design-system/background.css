@@ -1,0 +1,138 @@
+/* ==========================================================
+   FG INTERACTIVE EXPERIENCE
+   Background Engine v1
+========================================================== */
+
+#animatedBackground{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    z-index:-999;
+
+    background:
+        radial-gradient(circle at 20% 20%, rgba(79,124,255,.14), transparent 42%),
+        radial-gradient(circle at 80% 30%, rgba(139,92,246,.12), transparent 42%),
+        radial-gradient(circle at 50% 80%, rgba(0,180,255,.06), transparent 55%),
+        #06080f;
+        linear-gradient(
+135deg,
+rgba(5,8,22,.82),
+rgba(9,18,35,.82),
+rgba(12,22,48,.82)
+);
+}
+
+#animatedBackground::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:70vw;
+
+    height:70vw;
+
+    top:-20%;
+
+    left:-10%;
+
+    border-radius:50%;
+
+    background:rgba(59,130,246,.18);
+
+    filter:blur(120px);
+
+    animation:floatOne 18s ease-in-out infinite alternate;
+
+}
+
+#animatedBackground::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:60vw;
+
+    height:60vw;
+
+    right:-15%;
+
+    bottom:-20%;
+
+    border-radius:50%;
+
+    background:rgba(139,92,246,.18);
+
+    filter:blur(120px);
+
+    animation:floatTwo 22s ease-in-out infinite alternate;
+
+}
+
+@keyframes floatOne{
+
+    from{
+
+        transform:
+        translate(0,0)
+        scale(1);
+
+    }
+
+    to{
+
+        transform:
+        translate(80px,40px)
+        scale(1.2);
+
+    }
+
+}
+
+@keyframes floatTwo{
+
+    from{
+
+        transform:
+        translate(0,0)
+        scale(1);
+
+    }
+
+    to{
+
+        transform:
+        translate(-70px,-50px)
+        scale(1.15);
+
+    }
+
+}
+
+/* ==========================================================
+   Capa de textura sutil
+========================================================== */
+
+#animatedBackground .noise{
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:.1;
+
+    background-image:
+        radial-gradient(circle, rgba(255,255,255,.15) 1px, transparent 1px);
+
+    background-size:8px 8px;
+
+    mix-blend-mode:soft-light;
+
+    pointer-events:none;
+
+}

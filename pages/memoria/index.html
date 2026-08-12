@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Memoria Descriptiva</title>
+
+<link rel="stylesheet" href="../../design-system/variables.css">
+<link rel="stylesheet" href="../../design-system/typography.css">
+<link rel="stylesheet" href="../../design-system/layout.css">
+<link rel="stylesheet" href="../../design-system/components.css">
+
+</head>
+
+<body>
+
+<main class="module">
+
+<a class="back-button" href="../hub/index.html">
+← Volver al Experience Hub
+</a>
+
+<div class="module-card">
+
+<span class="badge">
+
+MÓDULO 04
+
+</span>
+
+<div id="memoriaContainer"></div>
+
+</div>
+
+</main>
+
+<script>
+
+fetch("../../assets/text/memoria.html")
+
+.then(response => response.text())
+
+.then(html => {
+
+document.getElementById("memoriaContainer").innerHTML = html;
+
+});
+
+</script>
+<script src="../../js/page-transition.js"></script>
+</body>
+
+</html>

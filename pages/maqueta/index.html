@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Maqueta Virtual | FG Interactive Experience</title>
+
+<link rel="stylesheet" href="../../design-system/variables.css">
+<link rel="stylesheet" href="../../design-system/typography.css">
+<link rel="stylesheet" href="../../design-system/layout.css">
+<link rel="stylesheet" href="../../design-system/components.css">
+
+</head>
+
+<body>
+
+<main class="page-layout">
+
+<a class="back-button" href="../hub/index.html">
+
+← Volver al Experience Hub
+
+</a>
+
+<section class="viewer-3d">
+
+    <model-viewer
+        id="modelViewer"
+
+        src="../../assets/models/loft.glb"
+
+        camera-controls
+
+        camera-orbit="45deg 65deg 12m"
+        field-of-view="30deg"
+
+        min-camera-orbit="auto auto 1m"
+        max-camera-orbit="auto auto 50m"
+
+        auto-rotate
+        auto-rotate-delay="0"
+        rotation-per-second="12deg"
+
+        exposure="1.2"
+
+        shadow-intensity="1"
+        shadow-softness="1"
+
+        environment-image="neutral"
+
+        interaction-prompt="none"
+
+        touch-action="pan-y"
+
+        loading="eager"
+
+        reveal="auto">
+
+    </model-viewer>
+
+
+    </div>
+
+    <div class="viewer-toolbar premium-toolbar">
+
+        <button class="tool-button" id="homeView">🏠</button>
+
+        <button class="tool-button" id="isoView">🧭</button>
+
+        <button class="tool-button" id="topView">⬆</button>
+
+        <button class="tool-button" id="resetView">🔄</button>
+
+        <button class="tool-button" id="rotateToggle">🔁</button>
+
+        <button class="tool-button" id="fullscreen3D">⛶</button>
+
+    </div>
+
+</section>
+<div class="viewer-info">
+
+    <span class="viewer-label">
+
+        Proyecto
+
+    </span>
+
+    <h2>
+
+        Loft FG
+
+    </h2>
+
+    <p>
+
+        Estudio FG
+
+    </p>
+
+    <div class="viewer-meta">
+
+        <span>Argentina</span>
+
+        <span>2026</span>
+
+        <span>Modelo BIM</span>
+
+    </div>
+
+</div>
+
+</main>
+
+<script type="module"
+src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+</script>
+
+<script src="../../js/maqueta.js"></script>
+
+<script src="../../js/page-transition.js"></script>
+
+</body>
+
+</html>

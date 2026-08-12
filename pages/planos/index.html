@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Planos | FG Interactive Experience</title>
+
+<link rel="stylesheet" href="../../design-system/variables.css">
+<link rel="stylesheet" href="../../design-system/typography.css">
+<link rel="stylesheet" href="../../design-system/layout.css">
+<link rel="stylesheet" href="../../design-system/components.css">
+
+</head>
+
+<body>
+
+<main class="page-layout planos-page">
+
+    <a class="back-button" href="../hub/index.html">
+
+        ← Volver al Experience Hub
+
+    </a>
+
+    <section class="page-header planos-header">
+
+        <span class="badge">
+
+            MÓDULO 03
+
+        </span>
+
+        <h1>
+
+            Legajo Técnico
+
+        </h1>
+
+        <p>
+
+            Explorá el legajo completo del proyecto.
+
+        </p>
+
+    </section>
+
+    <section class="pdf-viewer">
+
+        <button
+            class="pdf-fullscreen"
+            id="pdfFullscreen">
+
+            ⛶ Pantalla completa
+
+        </button>
+
+        <iframe
+
+            id="pdfFrame"
+
+            src="../../assets/pdf/legajo_loft.pdf"
+
+            frameborder="0">
+
+        </iframe>
+
+    </section>
+
+    <div class="pdf-toolbar">
+
+        <button class="pdf-tool">
+
+            Portada
+
+        </button>
+
+        <button class="pdf-tool">
+
+            Plantas
+
+        </button>
+
+        <button class="pdf-tool">
+
+            Cortes
+
+        </button>
+
+        <button class="pdf-tool">
+
+            Detalles
+
+        </button>
+
+        <a
+
+            class="pdf-tool"
+
+            href="../../assets/pdf/legajo_loft.pdf"
+
+            download>
+
+            Descargar PDF
+
+        </a>
+
+    </div>
+
+</main>
+
+<script>
+
+const button = document.getElementById("pdfFullscreen");
+const viewer = document.querySelector(".pdf-viewer");
+
+button.addEventListener("click",()=>{
+
+    if(!document.fullscreenElement){
+
+        viewer.requestFullscreen();
+
+    }else{
+
+        document.exitFullscreen();
+
+    }
+
+});
+
+</script>
+
+<script src="../../js/page-transition.js"></script>
+
+</body>
+
+</html>
