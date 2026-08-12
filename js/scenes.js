@@ -9,7 +9,7 @@ export const SCENES = {
         id: "exterior_1",
         name: "Exterior Frente",
         floor: "PB",
-        image: "../../assets/panoramas/exterior_1.png",
+        image: "assets/panoramas/exterior_1.png",
 
         hotspots: [
 
@@ -36,7 +36,7 @@ export const SCENES = {
         id: "exterior_2",
         name: "Exterior Frente Lateral",
         floor: "PB",
-        image: "../../assets/panoramas/exterior_2.png",
+        image: "assets/panoramas/exterior_2.png",
 
         hotspots: [
 
@@ -67,7 +67,7 @@ export const SCENES = {
         id: "exterior_3",
         name: "Exterior Lateral",
         floor: "PB",
-        image: "../../assets/panoramas/exterior_3.png",
+        image: "assets/panoramas/exterior_3.png",
 
         hotspots: [
 
@@ -104,7 +104,7 @@ export const SCENES = {
         id: "exterior_4",
         name: "Patio Posterior",
         floor: "PB",
-        image: "../../assets/panoramas/exterior_4.png",
+        image: "assets/panoramas/exterior_4.png",
 
         hotspots: [
 
@@ -129,7 +129,7 @@ export const SCENES = {
         id: "exterior_5",
         name: "Patio Fondo",
         floor: "PB",
-        image: "../../assets/panoramas/exterior_5.png",
+        image: "assets/panoramas/exterior_5.png",
 
         hotspots: [
 
@@ -158,7 +158,7 @@ export const SCENES = {
         id: "estar",
         name: "Estar",
         floor: "PB",
-        image: "../../assets/panoramas/estar.png",
+        image: "assets/panoramas/estar.png",
 
         hotspots: [
 
@@ -189,7 +189,7 @@ export const SCENES = {
         id: "comedor",
         name: "Comedor",
         floor: "PB",
-        image: "../../assets/panoramas/comedor.png",
+        image: "assets/panoramas/comedor.png",
 
         hotspots: [
 
@@ -226,7 +226,7 @@ export const SCENES = {
         id: "cocina",
         name: "Cocina",
         floor: "PB",
-        image: "../../assets/panoramas/cocina.png",
+        image: "assets/panoramas/cocina.png",
 
         hotspots: [
 
@@ -251,7 +251,7 @@ export const SCENES = {
         id: "baño",
         name: "Baño",
         floor: "PB",
-        image: "../../assets/panoramas/baño.png",
+        image: "assets/panoramas/baño.png",
 
         hotspots: [
 
@@ -274,7 +274,7 @@ export const SCENES = {
         id: "dormitorio_1",
         name: "Dormitorio",
         floor: "PA",
-        image: "../../assets/panoramas/dormitorio_1.png",
+        image: "assets/panoramas/dormitorio_1.png",
 
         hotspots: [
 
@@ -305,7 +305,7 @@ export const SCENES = {
         id: "dormitorio_2",
         name: "Vestidor",
         floor: "PA",
-        image: "../../assets/panoramas/dormitorio_2.png",
+        image: "assets/panoramas/dormitorio_2.png",
 
         hotspots: [
 
@@ -330,7 +330,7 @@ export const SCENES = {
         id: "dormitorio_3",
         name: "Escritorio",
         floor: "PA",
-        image: "../../assets/panoramas/dormitorio_3.png",
+        image: "assets/panoramas/dormitorio_3.png",
 
         hotspots: [
 

@@ -18,7 +18,7 @@ const ProjectData = {
 
    viewer:{
 
-    panorama:"../../assets/panoramas/living.jpg",
+    panorama:"assets/panoramas/living.jpg",
 
     initialYaw:180,
 
@@ -32,17 +32,17 @@ const ProjectData = {
 
         {
             title:"Exterior",
-            image:"../../assets/images/loft/render01.png"
+            image:"assets/images/loft/render01.png"
         },
 
         {
             title:"Living",
-            image:"../../assets/images/loft/render02.png"
+            image:"assets/images/loft/render02.png"
         },
 
         {
             title:"Dormitorio",
-            image:"../../assets/images/loft/render03.png"
+            image:"assets/images/loft/render03.png"
         }
 
     ],
@@ -51,12 +51,12 @@ const ProjectData = {
 
         {
             title:"Planta Baja",
-            file:"../../assets/images/planos/planta_baja.jpg"
+            file:"assets/images/planos/planta_baja.jpg"
         },
 
         {
             title:"Planta Alta",
-            file:"../../assets/images/planos/planta_alta.jpg"
+            file:"assets/images/planos/planta_alta.jpg"
         }
 
     ],
